@@ -63,7 +63,7 @@ public class TestScenario1 {
 	public void inValidlogin() throws InterruptedException {
 	LoginPage obj4=new LoginPage(driver);	
 	obj4.signin("standard", "secret");
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	obj4.validate_error_msg();
 	
 	driver.close();
