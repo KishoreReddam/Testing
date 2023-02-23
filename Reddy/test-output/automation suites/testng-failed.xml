@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [automation suites]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="demo(failed)">
+    <classes>
+      <class name="Test_scenarios.TestScenario1">
+        <methods>
+          <include name="abeforetest"/>
+          <include name="launch"/>
+          <include name="inValidlogin"/>
+          <include name="bAftertest"/>
+        </methods>
+      </class> <!-- Test_scenarios.TestScenario1 -->
+    </classes>
+  </test> <!-- demo(failed) -->
+</suite> <!-- Failed suite [automation suites] -->
