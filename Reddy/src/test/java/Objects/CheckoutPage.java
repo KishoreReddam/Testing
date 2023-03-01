@@ -38,7 +38,7 @@ public class CheckoutPage {
          Thread.sleep(3000);
          String msg=driver.findElement(Message).getText();
          System.out.print(msg);
-         String expected ="THANK YOU FOR YOUR ORDER";
+         String expected ="Thank you for your order!";
  		Assert.assertEquals(msg, expected);
 		
 	}
