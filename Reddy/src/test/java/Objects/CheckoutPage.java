@@ -22,6 +22,8 @@ public class CheckoutPage {
 	By Continue=By.xpath("//*[@id='continue']");
 	By Finish=By.xpath("//*[@id='finish']");
 	By Message=By.xpath("//*[@id='checkout_complete_container']/h2");
+	By Menu=By.xpath("//*[@id='react-burger-menu-btn']");
+	By Logout=By.xpath("//*[@id='logout_sidebar_link']");
 	
 	public void Checkout(String firstName,String lastName,String postCode) throws InterruptedException
 	{
@@ -42,5 +44,12 @@ public class CheckoutPage {
  		Assert.assertEquals(msg, expected);
 		
 	}
-
+	public void Logout() throws InterruptedException
+	{
+		driver.findElement(Menu).click();
+        Thread.sleep(3000);
+        driver.findElement(Logout).click();
+		
+	}
+	
 }
