@@ -24,6 +24,7 @@ public class CheckoutPage {
 	By Message=By.xpath("//*[@id='checkout_complete_container']/h2");
 	By Menu=By.xpath("//*[@id='react-burger-menu-btn']");
 	By Logout=By.xpath("//*[@id='logout_sidebar_link']");
+	By Message2=By.xpath("//*[@id='login_credentials']/h4");
 	
 	public void Checkout(String firstName,String lastName,String postCode) throws InterruptedException
 	{
@@ -49,6 +50,10 @@ public class CheckoutPage {
 		driver.findElement(Menu).click();
         Thread.sleep(3000);
         driver.findElement(Logout).click();
+        String msg2=driver.findElement(Message2).getText();
+        System.out.print(msg2);
+        String expected2 ="Accepted usernames are:";
+		Assert.assertEquals(msg2, expected2);
 		
 	}
 	

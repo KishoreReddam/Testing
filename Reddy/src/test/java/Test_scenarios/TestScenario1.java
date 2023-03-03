@@ -59,6 +59,8 @@ public class TestScenario1 {
 	obj3.Checkout("Kishore", "Reddy", "TS14NB");
 	
 	obj3.Logout();
+	
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@Test(priority=2)

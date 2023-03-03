@@ -7,8 +7,7 @@
         <methods>
           <include name="abeforetest"/>
           <include name="launch"/>
-          <include name="inValidlogin"/>
-          <include name="bAftertest"/>
+          <include name="ValidCheckout"/>
         </methods>
       </class> <!-- Test_scenarios.TestScenario1 -->
     </classes>
