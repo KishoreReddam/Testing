@@ -12,19 +12,19 @@ public class CheckoutPage {
 	{
 		this.driver=driver;
 	}
-	By Checkout=By.xpath("//*[@id='checkout']");
-	By remove=By.xpath("//*[@id='remove-sauce-labs-bike-light']");
-	By Continue_Shopping=By.xpath("//*[@id='continue-shopping']");
+	public By Checkout=By.xpath("//*[@id='checkout']");
+	public By remove=By.xpath("//*[@id='remove-sauce-labs-bike-light']");
+	public By Continue_Shopping=By.xpath("//*[@id='continue-shopping']");
 	
-	By FirstName=By.xpath("//*[@id='first-name']");
-	By LastName=By.xpath("//*[@id='last-name']");
-	By Postcode=By.xpath("//*[@id='postal-code']");
-	By Continue=By.xpath("//*[@id='continue']");
-	By Finish=By.xpath("//*[@id='finish']");
-	By Message=By.xpath("//*[@id='checkout_complete_container']/h2");
-	By Menu=By.xpath("//*[@id='react-burger-menu-btn']");
-	By Logout=By.xpath("//*[@id='logout_sidebar_link']");
-	By Message2=By.xpath("//*[@id='login_credentials']/h4");
+	public By FirstName=By.xpath("//*[@id='first-name']");
+	public By LastName=By.xpath("//*[@id='last-name']");
+	public By Postcode=By.xpath("//*[@id='postal-code']");
+	public By Continue=By.xpath("//*[@id='continue']");
+	public By Finish=By.xpath("//*[@id='finish']");
+	public By Message=By.xpath("//*[@id='checkout_complete_container']/h2");
+	public By Menu=By.xpath("//*[@id='react-burger-menu-btn']");
+	public By Logout=By.xpath("//*[@id='logout_sidebar_link']");
+	public By Message2=By.xpath("//*[@id='login_credentials']/h4");
 	
 	public void Checkout(String firstName,String lastName,String postCode) throws InterruptedException
 	{

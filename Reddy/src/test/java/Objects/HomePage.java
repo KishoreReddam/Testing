@@ -10,10 +10,11 @@ public class HomePage {
 	{
 		this.driver=driver;
 	}
-	By Product1_add=By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']");
-	By Product2_add=By.xpath("//*[@id='add-to-cart-sauce-labs-bike-light']");
-	By cart=By.xpath("//*[@id='shopping_cart_container']/a");
+	public By Product1_add=By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']");
+	public By Product2_add=By.xpath("//*[@id='add-to-cart-sauce-labs-bike-light']");
+	public By cart=By.xpath("//*[@id='shopping_cart_container']/a");
 	
+		
 	public void AddingItems()
 	{
 		driver.findElement(Product1_add).click();

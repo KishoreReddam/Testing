@@ -10,10 +10,10 @@ public class LoginPage {
 	{
 		this.driver=driver;
 	}
-	By username=By.xpath("//*[@id='user-name']");
-	By password=By.xpath("//*[@id='password']");
-	By login=By.xpath("//*[@id='login-button']");
-	By errormsg=By.xpath("//*[@id='login_button_container']/div/form/div[3]/h3");
+	public By username=By.xpath("//*[@id='user-name']");
+	public By password=By.xpath("//*[@id='password']");
+	public By login=By.xpath("//*[@id='login-button']");
+	public By errormsg=By.xpath("//*[@id='login_button_container']/div/form/div[3]/h3");
 	
 	public void signin(String User,String pwd)
 	{
